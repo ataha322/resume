@@ -3,6 +3,6 @@
 
 # But not these files...
 !.gitignore
-!main.tex
-!main.pdf
+!resume-Ata.tex
+!resume-Ata.pdf
 
