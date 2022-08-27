@@ -123,7 +123,6 @@
       {University of California, San Diego}{La Jolla, CA, 9500 Gilman Dr}
       {Bachelor of Science, Mathematics and Computer Science}{Expected January 2024}
           \resumeItemListStart
-            \resumeItem{GPA: 3.6/4.0}
             \resumeItem{\textbf{Relevant Coursework}}:\\
             Intro Object-Oriented Programming (Java), Advanced Data Structures, Algorithms, Systems Programming (ARMv8 Assembly), Components and Digital Systems (RTL design, boolean logic), Theory of Computations (Finite Automatons and Turing Machines), Discrete Mathematics, Abstract Algebra, Combinatorics, Software Tools, Relativity and Quantum Mechanics.
             
@@ -160,6 +159,20 @@
 \section{Projects}
 
     \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+          {\textbf{Planner.xyi} $|$ \emph{Web-application}}{June 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Planner/Calendar/Notepad application. Initially implemented as a web app but will be ported on android. The structure is simple: User-Task interaction. Task modules communicate with user modules through binded UserId's, which allows to store multiple users with their private tasks. Features implemented: registration, login, sort and search, deadline counting, email verification, authentication.}
+            \resumeItem{Wrote the backing code with Golang due to the use of the GORM library and use of concurrency with goroutines.}
+            \resumeItem{Packaged this program into the docker container for its easy portability.}
+            \resumeItem{Stored data in MySQL tables. Cached and encrypted the data with Redis and JWT respectively.}
+            \resumeItem{Frontend was implemented with the use of VueJS, Nuxt.js, and Vuetify.}
+            \resumeItem{Group Project: backend - \textit{Ata Altyyev}(me), frontend - \href{https://github.com/dzodkin33}{\textit{Boris Ryabov}}.\\
+            \url{https://github.com/ataha322/planner.xyi}
+            \url{https://github.com/dzodkin33/planner-front}}
+          \resumeItemListEnd
+
       \resumeProjectHeading
           {\textbf{Online Store} $|$ \emph{Web-application}}{April 2022 -- Present}
           
@@ -168,22 +181,12 @@
             \resumeItem{Technologies used: backend language - Golang, platform - Docker, database - MySQL, caching - Redis, encryption -  JSON Web Token, payments - Stripe, emails - SMTP, concurrency - goroutines. Frontend: VueJS, Nuxt.js, Vuetify. Backend is fully functional, frontend is in progress.}
             \resumeItem{\url{https://github.com/ataha322/online-store-backend}}
           \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Planner.xyi} $|$ \emph{Web-application}}{June 2022 -- Present}
-          \resumeItemListStart
-            \resumeItem{Planner/Calendar/Notepad application. Initially implemented as a web app but will be ported on android. The structure is simple: User-Task interaction. Task modules communicate with user modules through binded UserId's, which allows to store multiple users with their private tasks. Features implemented: registration, login, sort and search, deadline counting, email verification, authentication.}
-            \resumeItem{Technologies used: backend - Golang, Docker, MySQL, Redis, JWT. Fronted: VueJS, Nuxt.js, Vuetify.}
-            \resumeItem{Group Project: backend - \textit{Ata Altyyev}(me), frontend - \href{https://github.com/dzodkin33}{\textit{Boris Ryabov}}.}
-            \resumeItem{\url{https://github.com/ataha322/planner.xyi}}
-            \resumeItem{\url{https://github.com/dzodkin33/planner-front}}
-          \resumeItemListEnd
           
     \resumeProjectHeading
-          {\textbf{Newtonian mess} $|$ \emph{2D Gravity simulation}}{July 2022}
+          {\textbf{Newton's box} $|$ \emph{2D Gravity simulation}}{July 2022}
           \resumeItemListStart
-            \resumeItem{2D planet gravity simulation. Moon rotates around its planet.}
-            \resumeItem{Technologies used: C++ and SFML library. Two different objects implemented: planet and its moon. Gravity calculations are made in the moon object, with planet object passed in. Planet is movable, simulation is resettable, window frames are adjoint.}
+            \resumeItem{2D planet gravity simulation. Moon rotates around its planet where planet is a movable object to demostrate changes in inertial and accelerated frames.}
+            \resumeItem{Used C++ and SFML library to implement two key objects: planet and its moon. Gravity calculations are made in the moon object, with planet object passed in. Planet is movable, simulation is resettable, window frames are adjoint.}
             \resumeItem{Technical details: $F = G \dfrac{m_1m_2}{d^2}$}
             \resumeItem{\url{https://github.com/ataha322/newtonBox}}
           \resumeItemListEnd
@@ -193,7 +196,7 @@
           \resumeItemListStart
             \resumeItem{Gym app for Android. App was supposed to recognize gym equipment and display the corresponding exercise from YouTube. My work: open the gallery, import the selected image, display on the main menu; feed 300 images of basic gym equipment to ML Kit.}
             \resumeItem{Technologies used: Kotlin, Android Studio, ML Kit.}
-            \resumeItem{Accomplished: Main menu and picture selection worked out. Image recognition worked on equipment.}
+            \resumeItem{Accomplished: Main menu and picture selection worked out. Image recognition worked o the gym equipment.}
             \resumeItem{\url{https://devpost.com/software/myexercise}}
           \resumeItemListEnd
           
