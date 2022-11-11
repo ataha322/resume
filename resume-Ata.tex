@@ -123,9 +123,9 @@
       {University of California, San Diego}{La Jolla, CA}
       {Bachelor of Science, Mathematics and Computer Science, GPA: 3.6}{Expected January 2024}
           \resumeItemListStart
-          \resumeItem{\textbf{Relevant Coursework}}:\\
+          \resumeItem{\textbf{Relevant Coursework:}}\\
           \qquad Computer Graphics, Advanced Data Structures and Algorithms, Systems Programming (ARMv8 Assembly), Digital Systems/RTL design, Computation Theory, Mathematical Logic, Computability, Algebraic Combinatorics.
-          \resumeItem{\textbf{Self-taught}}:\\
+          \resumeItem{\textbf{Self-taught:}}\\
           \qquad Kernighan \& Ritchie, The C Programming Language\\
           \qquad Anderson and Dahlin, Operating Systems - Principles $\&$ Practice.
           % \resumeItem{\textbf{Objective:} Graphics Software, Graphical Computations, Game Engine Middleware.} 
@@ -141,8 +141,8 @@
       {University Research - Embedded Systems \& Tiny ML}{September 2022 – Present}
       {University of California, San Diego}{San Diego, California}
       \resumeItemListStart
-        \resumeItem{The research in ultra-low power embedded systems of a very small area that perform edge computations in ML models of size of several kilobytes.}
-        \resumeItem{Instruments used: TensorFlow, Keras, Python. Trained Fashion MNIST dataset via CNN classifier, which later upgraded to a separable CNN.}
+        \resumeItem{The research in ultra-low power embedded systems of a very small area that perform edge computations in ML models of size smaller than 2 MB.}
+        \resumeItem{Trained Fashion MNIST dataset via CNN classifier, which later upgraded to a separable CNN. Optimized the size of the model by pruning and quantizing. Instruments used: TensorFlow, Keras, Python.}
       \resumeItemListEnd
      
     \resumeSubHeadingListEnd
@@ -153,28 +153,10 @@
     \resumeSubHeadingListStart
 
     \resumeProjectHeading
-          {\textbf{Rendering} $|$ \emph{Real time rendered graphics}}{August 2022}
-          
-          \resumeItemListStart
-            \resumeItem{Real time rendered graphics using C++, SFML, OpenGL.}
-            \resumeItem{This is a part of my learning of OpenGL, guided project. Implemented a moving camera, randomly generated buildings, fog, built a texture cube.}
-            \resumeItem{Technical significancies lied in bitwise operations and geometry calculations.}
-            \resumeItem{\url{https://github.com/ataha322/opengl-render-city}}
-          \resumeItemListEnd
-          
-    \resumeProjectHeading
-          {\textbf{Gravity box} $|$ \emph{2D Gravity simulation}}{July 2022}
-          \resumeItemListStart
-            \resumeItem{2D planet gravity simulation. Moon rotates around its planet where planet is a movable object to demostrate changes in inertial and accelerated frames.}
-            \resumeItem{Used C++ and SFML library to implement two key objects: planet and its moon. Gravity calculations are made in the moon object, with planet object passed in. Planet is movable, simulation is resettable, window frames are adjoint.}
-            \resumeItem{\url{https://github.com/ataha322/newtonBox}}
-          \resumeItemListEnd         
-
-    \resumeProjectHeading
           {\textbf{Planner} $|$ \emph{Web-application}}{June 2022 -- Aug 2022}
           \resumeItemListStart
-            \resumeItem{Planner/Calendar/Notepad application. Initially implemented as a web app but will be ported on android. The structure is simple: User-Task interaction. Task modules communicate with user modules through binded UserId's, which allows to store multiple users with their private tasks. Features implemented: registration, login, sort and search, deadline counting, email verification, authentication.}
-            \resumeItem{Wrote the backing code with Golang due to the use of the GORM library and use of concurrency with goroutines.}
+            \resumeItem{Planner/Calendar/Notepad application. Designed as a web app but will be ported on android. The structure is User-Task interaction. Task modules communicate with user modules through binded UserId's, which allows to store multiple users with their private tasks.}
+            \resumeItem{Wrote the backing code with Golang due to the use of the GORM library and use of concurrency with goroutines. Features built: registration, login, sort and search, deadline counting, email verification, authentication.}
             \resumeItem{Packaged this program into the docker container for its easy portability.}
             \resumeItem{Stored data in MySQL tables. Cached and encrypted the data with Redis and JWT respectively.}
             \resumeItem{Frontend was implemented with the use of VueJS, Nuxt.js, and Vuetify.}
@@ -183,7 +165,25 @@
             \url{https://github.com/dzodkin33/planner-front}}
           \resumeItemListEnd 
 
-    \resumeSubHeadingListEnd
+    \resumeProjectHeading
+          {\textbf{Rendering} $|$ \emph{Real time rendered graphics}}{August 2022}
+          
+          \resumeItemListStart
+            \resumeItem{My learning of OpenGL, guided project. Implemented a moving camera, randomly generated buildings, fog, built a texture cube. Used C++, SFML, and OpenGL.}
+            \resumeItem{Technical significancies lied in bitwise operations and geometry calculations.}
+            \resumeItem{\url{https://github.com/ataha322/opengl-render-city}}
+          \resumeItemListEnd
+          
+    \resumeProjectHeading
+          {\textbf{Gravity box} $|$ \emph{2D Gravity simulation}}{July 2022}
+          \resumeItemListStart
+            \resumeItem{2D planet gravity simulation. Moon rotates around its planet where planet is a movable object to demostrate changes in inertial and accelerated frames.}
+            \resumeItem{Two key objects were built: planet and its moon. Computations align with expectations for constant and accelerated motions of gravitational objects.}
+            \resumeItem{Used C++ and SFML library.}
+            \resumeItem{\url{https://github.com/ataha322/newtonBox}}
+          \resumeItemListEnd         
+
+  \resumeSubHeadingListEnd
 
 
 
